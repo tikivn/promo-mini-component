@@ -1,0 +1,10 @@
+.container {
+  margin: 40rpx auto;
+}
+
+.tip-text {
+  margin: 40rpx 0 80rpx 0;
+  text-align: center;
+  font-size: 36rpx;
+  color: #3a79d8;
+}

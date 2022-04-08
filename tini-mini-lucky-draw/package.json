@@ -1,0 +1,27 @@
+{
+  "name": "@tiki.vn/tini-mini-lucky-draw",
+  "version": "1.0.0",
+  "description": "TiniApp Lucky Draw",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "game",
+    "lucky-draw",
+    "tiki",
+    "tiniapp",
+    "tiki-tiniapp",
+    "miniapp",
+    "tiki-miniapp",
+    "ant-mini",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "^9.6.1-alpha.1"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
+    "pub": "npm run build && npm publish"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,13 @@
+<view style="display: block">Password: {{password}}</view>
+<view class="container">
+  <lock 
+    canvasWidth="300" 
+    canvasHeight="300" 
+    drawColor="#3985ff" 
+    canvasId="canvasLock" 
+    chooseType="4"
+    titleColor="#000000"
+    titleText="Draw the unlock pattern"
+    onFinish="onFinish">
+  </lock>
+</view>

@@ -1,0 +1,24 @@
+{
+  "name": "@tiki.vn/tini-mini-hit-eggs",
+  "version": "1.0.0",
+  "description": "Tini Mini Hit Eggs",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "hit-eggs",
+    "tiki",
+    "tiniapp",
+    "tiki-tiniapp",
+    "miniapp",
+    "tiki-miniapp",
+    "ant-mini",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "^9.6.1-alpha.1"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js"
+  }
+}

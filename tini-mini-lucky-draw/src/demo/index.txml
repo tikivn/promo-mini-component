@@ -1,0 +1,4 @@
+<view class="container">
+  <lucky-draw height="80" width="60" num="{{num}}" />
+  <button onTap="onDrawTap">Draw</button>
+</view>

@@ -1,0 +1,30 @@
+<view class="eggs-container {{className}} {{isSmashing ? 'smashing' : ''}}">
+  <view class="eggs" style="width:{{eggWidth*eggCol}}px">
+    <view tiki:for="{{list}}">
+      <view
+        class="egg {{activeIndex === index ? 'jumping' : ''}}"
+        style="width:{{eggWidth}}px;height:{{eggWidth}}px;margin-top:{{eggMarginTop}}px"
+        key="{{index}}"
+      >
+        <view tiki:if="{{item===STATE_STILL}}">
+         <image src="{{eggIcon}}" mode="widthFix" style="width:100%"/>
+        </view>
+        <view tiki:elif="{{item===STATE_BROKEN}}">
+         <image src="{{smashedIcon}}" mode="widthFix" style="width:100%"/>
+        </view>
+        <view tiki:elif="{{item===STATE_JUMPING}}" onTap="onHiting">
+         <image src="{{jumpIcon}}" mode="widthFix" style="width:100%;margin-top:-10%"/>
+        </view>
+        <view tiki:else>
+         <image src="{{redBagIcon}}" mode="widthFix" style="width:100%;"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view
+    class="hammer {{hammerMace ? 'mace' : ''}}"
+    style="top:{{hammerPosY || hammerOriginY}}px;right:{{hammerPosX || hammerOriginX}}px"
+  >
+    <image src="{{hammerIcon}}" mode="widthFix" style="width:{{hammerWidth}}px"/>
+  </view>
+</view>

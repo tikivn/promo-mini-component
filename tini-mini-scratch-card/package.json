@@ -1,0 +1,25 @@
+{
+  "name": "@tiki.vn/tini-mini-scratch-card",
+  "version": "1.0.0",
+  "description": "Tini Mini Scratch Card",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "scratch card",
+    "tiki",
+    "tiniapp",
+    "tiki-tiniapp",
+    "miniapp",
+    "tiki-miniapp",
+    "ant-mini",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js"
+  },
+  "license": "ISC"
+}

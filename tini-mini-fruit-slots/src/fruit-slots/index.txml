@@ -1,0 +1,20 @@
+<view class="fruit-slots {{class}}">
+    <view class="lt-item-list" style="width:{{width}}px;height:{{width}}px">
+        <block tiki:for="{{prizeList}}">
+            <view
+              key="{{index}}"
+              class="lt-item {{index === activeIndex ? 'lt-active' : ''}}"
+              style="width:{{itemWidth}}px;height:{{itemWidth}}px;margin:{{margin}}px 0 0 {{margin}}px"
+            >
+                <image src="{{item.icon}}" mode="widthFix" style="width:100%" />
+            </view>
+            <view
+              key="btn"
+              tiki:if="{{index==3}}"
+              class="lt-item lt-button {{disabled ? 'disabled' : (isRolling ? 'pause' : '')}}"
+              style="width:{{itemWidth}}px;height:{{itemWidth}}px;margin:{{margin}}px 0 0 {{margin}}px"
+              onTap="start"
+            />
+        </block>
+    </view>
+</view>

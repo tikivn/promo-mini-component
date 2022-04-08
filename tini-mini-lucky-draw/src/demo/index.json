@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "lucky-draw": "../component/index"
+  }
+}

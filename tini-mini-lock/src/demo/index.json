@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "Gesture unlock",
+  "allowsBounceVertical": "NO",
+  "usingComponents": {
+    "lock": "../lock/index"
+  }
+}

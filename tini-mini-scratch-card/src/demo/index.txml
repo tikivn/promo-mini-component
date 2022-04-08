@@ -1,0 +1,15 @@
+<view class="container">
+  <scratch
+    tipText="Cào ngay để nhận thưởng~"
+    tipColor="#902d02"
+    coverColor="#ffae8a"
+    ctxLogoUrl="https://gw.alipayobjects.com/zos/rmsportal/iGLmHkSxYfXveGhuzzFf.png"
+    resultText=''
+    autoFadeOut=true
+    onFinish="onFinish"
+  >
+    <view class="result">
+      <text>{{result}}</text>
+    </view>
+  </scratch>
+</view>

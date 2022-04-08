@@ -1,0 +1,21 @@
+<view class="container">
+  <view>Pre-lottery mode (Đã có kết quả từ trước và sau đó bắt đầu quay)</view>
+  <fruit-slots
+    prizeList="{{prizeList}}"
+    prizeName="{{prizeName}}"
+    disabled="{{disabled}}"
+    currentIndex="{{currentIndex}}"
+    onStart="onStart"
+    onFinish="onFinish"
+  />
+  <view class='tip-text'>{{tipText}}</view>
+  <view>Real-time lottery mode (Kết quả được lấy trong quá trình quay):</view>
+  <fruit-slots
+    mode="realtime"
+    prizeList="{{prizeList}}"
+    prizeName="{{prizeName2}}"
+    onStart="onStart2"
+    onFinish="onFinish2"
+  />
+  <view class='tip-text'>{{tipText2}}</view>
+</view>

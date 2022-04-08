@@ -1,0 +1,6 @@
+{
+  "pages": ["src/demo/index"],
+  "window": {
+    "defaultTitle": "Lucky Draw"
+  }
+}

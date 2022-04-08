@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "Scratch card gameplay",
+  "allowsBounceVertical": "NO",
+  "usingComponents": {
+    "scratch": "../scratch/index"
+  }
+}

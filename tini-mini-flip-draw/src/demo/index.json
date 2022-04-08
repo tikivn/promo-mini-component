@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "Flip Draw",
+  "usingComponents": {
+    "flipdraw": "../component/index"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "pages": ["src/demo/index"],
+  "window": {
+    "defaultTitle": "Flip draw",
+    "enableWK": "YES",
+    "enableDSL": true
+  }
+}

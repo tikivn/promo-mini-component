@@ -1,0 +1,43 @@
+.scratch-wrap {
+   position: relative;
+}
+
+.scratch-wrap .scratch-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.scratch-wrap .scratch-canvas.fade-out{
+    animation: canvas-fade-out 2s forwards;
+}
+
+.scratch-wrap .result-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: canvas-show-result .8s forwards;
+}
+/*
+  Add an animation and show the scratch result after a while
+  Avoid seeing the scratch result in perspective when the canvas has not been rendered
+ */
+@keyframes canvas-show-result {
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes canvas-fade-out {
+  100% {
+    opacity: 0;
+  }
+}
+
